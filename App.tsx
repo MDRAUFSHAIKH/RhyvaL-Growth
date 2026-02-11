@@ -32,7 +32,7 @@ const App: React.FC = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-[#0B0B0B] text-white selection:bg-[#A340FF] selection:text-white">
+    <div className="min-h-screen bg-[#000000] text-white selection:bg-white selection:text-black">
       <Navbar activeSection={activeSection} />
       
       <main>
@@ -67,22 +67,22 @@ const App: React.FC = () => {
         </section>
       </main>
 
-      <footer className="border-t border-white/5 py-12 px-6">
+      <footer className="border-t border-white/10 py-16 px-6">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div className="flex items-center gap-2">
             <img 
-              src="https://lh3.googleusercontent.com/d/1zSvkd5xizmqgFp7h4tsmW-1LzN2JVrXJ" 
-              className="w-10 h-10 object-contain" 
+              src="https://lh3.googleusercontent.com/d/1vb4Q3jSNxPxp0g8sVHxG2qmzUVdTQEM3" 
+              className="w-10 h-10 object-contain invert" 
               alt="RhyvaL Logo" 
             />
-            <span className="font-bold text-xl tracking-tighter uppercase">RHYVAL<span className="text-[#A340FF]">GROWTH</span></span>
+            <span className="font-bold text-xl tracking-tighter uppercase">RHYVAL<span className="text-gray-400">GROWTH</span></span>
           </div>
-          <p className="text-gray-500 text-sm">© RHYVAL GROWTH. Performance First Design.</p>
-          <div className="flex flex-wrap justify-center md:justify-end gap-6">
-            <a href="https://instagram.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
-            <a href="https://www.linkedin.com/in/rhyvalcreates/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
-            <a href="https://x.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
-            <span className="text-gray-400 hover:text-white transition-colors cursor-default" title="Discord Handle">Discord: rhyval.creates</span>
+          <p className="text-gray-600 text-[10px] font-bold tracking-[0.2em] uppercase">© RHYVAL GROWTH. Interstellar Performance.</p>
+          <div className="flex flex-wrap justify-center md:justify-end gap-8 text-[11px] font-black uppercase tracking-widest">
+            <a href="https://instagram.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition-colors">Instagram</a>
+            <a href="https://www.linkedin.com/in/rhyvalcreates/" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://x.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-500 hover:text-white transition-colors">Twitter</a>
+            <span className="text-gray-500 cursor-default">Discord: rhyval.creates</span>
           </div>
         </div>
       </footer>

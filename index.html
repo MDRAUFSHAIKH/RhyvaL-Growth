@@ -4,38 +4,61 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>RhyvaL Growth | Thumbnails for Growth</title>
-    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1zSvkd5xizmqgFp7h4tsmW-1LzN2JVrXJ" />
+    <link rel="icon" type="image/png" href="https://lh3.googleusercontent.com/d/1vb4Q3jSNxPxp0g8sVHxG2qmzUVdTQEM3" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
     <style>
       html {
-        scroll-padding-top: 80px; /* Offset for sticky navbar */
+        scroll-padding-top: 80px;
         scroll-behavior: smooth;
       }
       body {
         font-family: 'Inter', sans-serif;
-        background-color: #0B0B0B;
+        background-color: #000000;
         color: #FFFFFF;
         overflow-x: hidden;
       }
-      .neon-glow {
-        box-shadow: 0 0 15px rgba(163, 64, 255, 0.4);
+      
+      /* Space Star Background Effect */
+      body::before {
+        content: "";
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: 
+          radial-gradient(1px 1px at 20px 30px, #eee, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 40px 70px, #fff, rgba(0,0,0,0)),
+          radial-gradient(1.5px 1.5px at 50px 160px, #ddd, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 80px 120px, #fff, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 110px 210px, #ddd, rgba(0,0,0,0)),
+          radial-gradient(1px 1px at 150px 30px, #fff, rgba(0,0,0,0));
+        background-repeat: repeat;
+        background-size: 200px 200px;
+        opacity: 0.15;
+        z-index: -1;
+        pointer-events: none;
       }
-      .neon-text {
-        color: #A340FF;
-        text-shadow: 0 0 10px rgba(163, 64, 255, 0.5);
+
+      .starlight-glow {
+        box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
       }
-      .bg-neon {
-        background-color: #A340FF;
+      .text-starlight {
+        color: #FFFFFF;
+        text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+      }
+      .bg-starlight {
+        background-color: #FFFFFF;
       }
       .text-gradient {
-        background: linear-gradient(135deg, #A340FF 0%, #D191FF 50%, #A340FF 100%);
+        background: linear-gradient(135deg, #FFFFFF 0%, #A3A3A3 50%, #FFFFFF 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-size: 200% auto;
-        animation: shine 4s linear infinite;
+        animation: shine 6s linear infinite;
       }
       @keyframes shine {
         to {
@@ -43,14 +66,14 @@
         }
       }
       ::-webkit-scrollbar {
-        width: 8px;
+        width: 6px;
       }
       ::-webkit-scrollbar-track {
-        background: #111;
+        background: #000;
       }
       ::-webkit-scrollbar-thumb {
         background: #333;
-        border-radius: 4px;
+        border-radius: 0px;
       }
       ::-webkit-scrollbar-thumb:hover {
         background: #444;

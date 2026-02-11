@@ -2,39 +2,39 @@ import React from 'react';
 
 const reasons = [
   {
-    title: 'Human Curiosity',
-    desc: 'I use specific visual "loops" that force the brain to seek closure by clicking the video.',
+    title: 'Neural Hooks',
+    desc: 'Visual loops that force the human brain to seek closure via a click.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
       </svg>
     )
   },
   {
-    title: 'Contrast & Emotion',
-    desc: 'High-contrast lighting combined with micro-expressions of emotion to stop the scroll.',
+    title: 'Light Vectors',
+    desc: 'Stark contrast lighting that highlights the "Hero" of your concept.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M13 10V3L4 14h7v7l9-11h-7z" />
       </svg>
     )
   },
   {
-    title: 'Text Hierarchy',
-    desc: 'Never more than 4 words. Bold, legible, and strategically placed for 1-second digestion.',
+    title: 'Text Compression',
+    desc: 'High-legibility typography optimized for 1-second digestion on mobile.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16m-7 6h7" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M4 6h16M4 12h16m-7 6h7" />
       </svg>
     )
   },
   {
-    title: 'Face + Framing',
-    desc: 'Golden-ratio framing of the subject ensures immediate focus on the hook.',
+    title: 'Subject Framing',
+    desc: 'NASA-level precision in framing to ensure focal points are never missed.',
     icon: (
       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M5.121 17.804A13.937 13.937 0 0112 16c2.5 0 4.847.655 6.879 1.804M15 10a3 3 0 11-6 0 3 3 0 016 0zm6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
       </svg>
     )
   }
@@ -42,25 +42,27 @@ const reasons = [
 
 const WhyWorks: React.FC = () => {
   return (
-    <div className="bg-[#111] py-16 md:py-32 border-y border-white/5">
+    <div className="bg-white/[0.02] py-24 md:py-40 border-y border-white/10">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-12 md:mb-20 space-y-4">
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
-            Why My <span className="text-[#A340FF]">Visuals</span> Win.
+        <div className="text-center mb-20 md:mb-32 space-y-4">
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter">
+            THE <span className="text-gray-500">LOGIC.</span>
           </h2>
-          <p className="text-gray-500 text-lg md:text-xl font-medium max-w-2xl mx-auto">
-            It isn't art. It's conversion engineering.
+          <p className="text-gray-600 text-[11px] font-black uppercase tracking-[0.4em] max-w-2xl mx-auto">
+            Design is not decoration. It is propulsion.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12">
           {reasons.map((r, i) => (
-            <div key={i} className="bg-[#0B0B0B] border border-white/5 p-8 rounded-xl hover:border-[#A340FF]/30 transition-all hover:-translate-y-2 group">
-              <div className="text-[#A340FF] mb-6 group-hover:scale-110 transition-transform origin-left">{r.icon}</div>
-              <h3 className="text-xl font-black uppercase tracking-tight mb-4">{r.title}</h3>
-              <p className="text-gray-500 font-medium leading-relaxed group-hover:text-gray-300 transition-colors">
-                {r.desc}
-              </p>
+            <div key={i} className="space-y-8 group">
+              <div className="text-white group-hover:scale-110 transition-transform origin-left border border-white/20 w-fit p-4 rounded-none">{r.icon}</div>
+              <div className="space-y-4">
+                <h3 className="text-xl font-black uppercase tracking-widest">{r.title}</h3>
+                <p className="text-gray-500 font-medium leading-relaxed group-hover:text-gray-300 transition-colors text-sm">
+                  {r.desc}
+                </p>
+              </div>
             </div>
           ))}
         </div>

@@ -2,52 +2,50 @@ import React from 'react';
 
 const steps = [
   {
-    num: '01',
-    title: 'Niche Research',
-    desc: 'I analyze your competitors and current trending visual patterns in your specific niche to find a "gap" in the viewer\'s feed.'
+    num: 'SYSTEM_01',
+    title: 'Research',
+    desc: 'Deep space analysis of competitor visual patterns and feed saturation levels.'
   },
   {
-    num: '02',
-    title: 'Hook Psychology',
-    desc: 'We define the core curiosity gap or emotional trigger. Whether it is "fear of missing out" or "pure disbelief", the concept comes first.'
+    num: 'SYSTEM_02',
+    title: 'Curiosity Hooks',
+    desc: 'Engineered emotional triggers designed to create immediate cognitive dissonance.'
   },
   {
-    num: '03',
-    title: 'Visual Contrast',
-    desc: 'Using high-saturation colors and sharp lighting to ensure your thumbnail pops even at 10% brightness on a mobile device.'
+    num: 'SYSTEM_03',
+    title: 'Luminance Fix',
+    desc: 'High-contrast lighting arrays ensuring the subject pops against any UI background.'
   },
   {
-    num: '04',
-    title: 'Test & Iterate',
-    desc: 'Delivery isn\'t the end. I monitor initial performance and provide variations if the CTR doesn\'t hit the target benchmarks.'
+    num: 'SYSTEM_04',
+    title: 'Performance',
+    desc: 'Continuous iteration based on real-world CTR telemetry and audience retention.'
   }
 ];
 
 const Process: React.FC = () => {
   return (
-    <div className="max-w-4xl mx-auto px-6">
-      <div className="space-y-12">
+    <div className="max-w-5xl mx-auto px-6">
+      <div className="space-y-20">
         <div className="space-y-4 text-center">
-          <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
-            How I <span className="text-[#A340FF]">Manufacture</span> Clicks.
+          <h2 className="text-5xl md:text-7xl font-black uppercase tracking-tighter">
+            THE <span className="text-gray-500">PROTOCOL.</span>
           </h2>
-          <p className="text-gray-400 text-lg md:text-xl font-medium max-w-2xl mx-auto">
-            A data-driven workflow designed to remove the guesswork from your growth.
+          <p className="text-gray-600 text-[11px] font-black uppercase tracking-[0.4em] max-w-2xl mx-auto">
+            A methodical approach to capturing attention in the digital vacuum.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-4 md:pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-16 gap-y-12">
           {steps.map((step, idx) => (
-            <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
-              <span className="text-[#A340FF] text-3xl md:text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity italic leading-none">
+            <div key={idx} className="group border-l border-white/10 pl-8 py-2 hover:border-white transition-colors">
+              <span className="text-gray-700 text-[10px] font-black tracking-widest block mb-4 group-hover:text-white transition-colors">
                 {step.num}
               </span>
-              <div className="space-y-2">
-                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight group-hover:text-[#A340FF] transition-colors">{step.title}</h3>
-                <p className="text-gray-500 leading-relaxed font-medium group-hover:text-gray-300 transition-colors text-sm md:text-base">
-                  {step.desc}
-                </p>
-              </div>
+              <h3 className="text-2xl font-black uppercase tracking-tighter mb-4">{step.title}</h3>
+              <p className="text-gray-500 font-medium leading-relaxed group-hover:text-gray-300 transition-colors text-sm">
+                {step.desc}
+              </p>
             </div>
           ))}
         </div>
