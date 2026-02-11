@@ -29,6 +29,18 @@
       .bg-neon {
         background-color: #A340FF;
       }
+      .text-gradient {
+        background: linear-gradient(135deg, #A340FF 0%, #D191FF 50%, #A340FF 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-size: 200% auto;
+        animation: shine 4s linear infinite;
+      }
+      @keyframes shine {
+        to {
+          background-position: 200% center;
+        }
+      }
       ::-webkit-scrollbar {
         width: 8px;
       }

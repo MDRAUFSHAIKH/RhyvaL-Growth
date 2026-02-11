@@ -42,18 +42,18 @@ const reasons = [
 
 const WhyWorks: React.FC = () => {
   return (
-    <div className="bg-[#111] py-32 border-y border-white/5">
+    <div className="bg-[#111] py-16 md:py-32 border-y border-white/5">
       <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-20 space-y-4">
+        <div className="text-center mb-12 md:mb-20 space-y-4">
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
             Why My <span className="text-[#A340FF]">Visuals</span> Win.
           </h2>
-          <p className="text-gray-500 text-xl font-medium max-w-2xl mx-auto">
+          <p className="text-gray-500 text-lg md:text-xl font-medium max-w-2xl mx-auto">
             It isn't art. It's conversion engineering.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
           {reasons.map((r, i) => (
             <div key={i} className="bg-[#0B0B0B] border border-white/5 p-8 rounded-xl hover:border-[#A340FF]/30 transition-all hover:-translate-y-2 group">
               <div className="text-[#A340FF] mb-6 group-hover:scale-110 transition-transform origin-left">{r.icon}</div>

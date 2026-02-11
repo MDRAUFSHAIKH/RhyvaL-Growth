@@ -37,7 +37,9 @@ const Navbar: React.FC<NavbarProps> = ({ activeSection }) => {
             className="w-10 h-10 object-contain transition-transform group-hover:scale-110" 
             alt="RhyvaL Logo" 
           />
-          <span className="font-black text-2xl tracking-tighter uppercase">RHYVAL<span className="text-[#A340FF]">GROWTH</span></span>
+          <span className="font-black text-2xl tracking-tighter uppercase text-white flex items-center">
+            RHYVAL<span className="bg-[#A340FF] text-white px-2 py-0.5 ml-1.5 inline-block">GROWTH</span>
+          </span>
         </a>
 
         {/* Desktop Menu */}

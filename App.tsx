@@ -42,33 +42,33 @@ const App: React.FC = () => {
 
         <MetricsStrip />
 
-        <section id="thumbnails" className="pt-24">
+        <section id="thumbnails" className="pt-16 md:pt-24">
           <ThumbnailGallery />
         </section>
 
-        <section id="process" className="pt-24">
+        <section id="process" className="pt-16 md:pt-24">
           <Process />
         </section>
 
-        <section id="why" className="pt-24">
+        <section id="why" className="pt-16 md:pt-24">
           <WhyWorks />
         </section>
 
-        <section id="pricing" className="pt-24">
+        <section id="pricing" className="pt-16 md:pt-24">
           <Pricing />
         </section>
 
-        <section id="results" className="pt-24">
+        <section id="results" className="pt-16 md:pt-24">
           <Testimonials />
         </section>
 
-        <section id="contact" className="pt-24 pb-24">
+        <section id="contact" className="pt-16 md:pt-24 pb-16 md:pb-24">
           <Contact />
         </section>
       </main>
 
       <footer className="border-t border-white/5 py-12 px-6">
-        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-6">
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8 text-center md:text-left">
           <div className="flex items-center gap-2">
             <img 
               src="https://lh3.googleusercontent.com/d/1zSvkd5xizmqgFp7h4tsmW-1LzN2JVrXJ" 

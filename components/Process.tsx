@@ -31,20 +31,20 @@ const Process: React.FC = () => {
           <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tighter">
             How I <span className="text-[#A340FF]">Manufacture</span> Clicks.
           </h2>
-          <p className="text-gray-400 text-xl font-medium max-w-2xl mx-auto">
+          <p className="text-gray-400 text-lg md:text-xl font-medium max-w-2xl mx-auto">
             A data-driven workflow designed to remove the guesswork from your growth.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 pt-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 pt-4 md:pt-8">
           {steps.map((step, idx) => (
-            <div key={idx} className="flex gap-6 group">
-              <span className="text-[#A340FF] text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity italic">
+            <div key={idx} className="flex flex-col sm:flex-row gap-4 sm:gap-6 group">
+              <span className="text-[#A340FF] text-3xl md:text-4xl font-black opacity-30 group-hover:opacity-100 transition-opacity italic leading-none">
                 {step.num}
               </span>
               <div className="space-y-2">
-                <h3 className="text-2xl font-black uppercase tracking-tight group-hover:text-[#A340FF] transition-colors">{step.title}</h3>
-                <p className="text-gray-500 leading-relaxed font-medium group-hover:text-gray-300 transition-colors">
+                <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight group-hover:text-[#A340FF] transition-colors">{step.title}</h3>
+                <p className="text-gray-500 leading-relaxed font-medium group-hover:text-gray-300 transition-colors text-sm md:text-base">
                   {step.desc}
                 </p>
               </div>
