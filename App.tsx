@@ -78,9 +78,11 @@ const App: React.FC = () => {
             <span className="font-bold text-xl tracking-tighter uppercase">RHYVAL<span className="text-[#A340FF]">GROWTH</span></span>
           </div>
           <p className="text-gray-500 text-sm">© RHYVAL GROWTH. Performance First Design.</p>
-          <div className="flex gap-6">
+          <div className="flex flex-wrap justify-center md:justify-end gap-6">
             <a href="https://instagram.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">Instagram</a>
             <a href="https://www.linkedin.com/in/rhyvalcreates/" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">LinkedIn</a>
+            <a href="https://x.com/rhyvalgrowth" target="_blank" rel="noreferrer" className="text-gray-400 hover:text-white transition-colors">Twitter</a>
+            <span className="text-gray-400 hover:text-white transition-colors cursor-default" title="Discord Handle">Discord: rhyval.creates</span>
           </div>
         </div>
       </footer>
